@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    {% if messages %}
+    <ul>
+        {% for message in messages%}
+        <li>
+            <div class="in">
+                {{ message }}
+
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</div>
+<a href="{% url 'report' %}">Create Report</a>
+
+    <div class="container">
+        <br>
+        <h2>LOGIN</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form action="{% url 'vali' %}" method="post">
+            {% csrf_token %}
+            <label>ROLL NO</label><br>
+            <input type="text" name="roll" required maxlength="8" minlength="8"><br>
+            <br>
+            <br>
+            <br>
+            <label>PASSWORD</label><br>
+            <input type="password" name="pass" required><br>
+            <br>
+            <br>
+            <button>LOGIN</button><br>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

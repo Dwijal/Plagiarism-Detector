@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline:none;
+    text-decoration: none;
+    border: none;
+}
+body{
+    background-image: linear-gradient(to right,#00d2ff,#3a7bd5);
+}
+.container{
+    position: relative;
+    margin-top :0px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width:20rem;
+    
+    top: 7rem;
+    border-radius: 1rem;
+    background-color: #F5F5F5;
+    box-shadow: 5px 5px 15px 5px #b1d2f1;
+
+}
+label{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px 0px;
+    font-weight: 800;
+    color: rgb(78, 74, 74);
+}
+input[type=text],input[type=password]{
+    border-bottom: solid 2px rgb(78, 74, 74);
+    background-color: #F5F5F5;
+    width: 200px;
+    height: 30px;
+    font-size: medium;
+}
+input[type=text]:focus,input[type=password]:focus{
+    border-bottom: solid 2px  #3a7bd5;
+}
+input[type=file]{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+}
+
+button{
+    
+    
+    align-items: center;
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+    top: 50px;
+    background-color: #3a7bd5;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    position: sticky;
+    
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.in{
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #adefd1ff;
+    font-size: 18px;
+
+
+}
+table{
+    margin: auto;
+    background-color: antiquewhite;
+    border: solid 1px black;
+}
+
+td,th{
+    text-align: center;
+    width:30vh;
+    padding: 10px 10px;
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
